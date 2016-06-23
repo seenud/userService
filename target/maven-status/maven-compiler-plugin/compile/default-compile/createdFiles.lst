@@ -1,0 +1,5 @@
+com/cisco/cmad/verticles/BootStrapVerticle.class
+com/cisco/cmad/jwt/JwtTokenUtil.class
+com/cisco/cmad/verticles/UserManager.class
+com/cisco/cmad/dto/UserDTO.class
+com/cisco/cmad/mongodb/MongoDBUtil.class
