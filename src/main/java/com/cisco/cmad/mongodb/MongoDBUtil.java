@@ -23,7 +23,7 @@ public class MongoDBUtil {
 		logger.log(Level.INFO," Inside the getMongoDB API..  ");
 		if (mongoTL.get() == null) {
 			MongoClientURI connectionString = new MongoClientURI(
-					"mongodb://vm-srdesai-001:27018");
+					"mongodb://173.36.54.200:27018");
 			MongoClient mongoClient = new MongoClient(connectionString);
 			Morphia morphia = new Morphia();
 			morphia.mapPackage("com.mysocial.model");
