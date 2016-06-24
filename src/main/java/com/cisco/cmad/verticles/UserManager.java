@@ -116,6 +116,11 @@ public class UserManager extends AbstractVerticle {
 			} else {
 				logger.log(Level.INFO, "User Not Authenticated !!! "
 						+ routingContext.getBodyAsString());
+				routingContext
+				.response()
+				.setStatusCode(403)
+				.putHeader("content-type",
+						"application/json; charset=utf-8").end(Json.encodePrettily("Invalid User"));
 				//return false;
 
 			}

@@ -20,4 +20,4 @@ COPY $VERTICLE_FILE $VERTICLE_HOME/
 # Launch the verticle
 WORKDIR $VERTICLE_HOME
 ENTRYPOINT ["sh", "-c"]
-CMD ["vertx run $VERTICLE_NAME -cp $VERTICLE_HOME/* -cluster"]
+CMD ["vertx run $VERTICLE_NAME -cp $VERTICLE_HOME/* -cluster -Djava.net.preferIPv4Stack=true"]
